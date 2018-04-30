@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/preset-flow", "@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-transform-object-assign",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-export-default-from"
+  ],
+  "env": {
+    "esm": {
+      "presets": [
+        ["@babel/preset-env", { "modules": false }],
+        "@babel/preset-react"
+      ]
+    }
+  }
+}

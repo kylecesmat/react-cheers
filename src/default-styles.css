@@ -1,0 +1,73 @@
+.notification-composer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  position: relative;
+  background-color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border: 4px solid currentColor;
+  background-color: #2d3436;
+}
+
+.notification--status-notification {
+  color: #74b9ff;
+}
+
+.notification--status-success {
+  color: #00b894;
+}
+
+.notification--status-warning {
+  color: #fdcb6e;
+}
+
+.notification--status-error {
+  color: #d63031;
+}
+
+.notification span {
+  display: block;
+  padding-right: 60px;
+  font-size: 0.8em;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.notification button {
+  /* reset */
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.6em;
+  padding: 10px;
+  width: 60px;
+}
+
+.notification button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
