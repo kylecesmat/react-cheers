@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/kylecesmat/react-cheers/master/cheers.gif" width=550>
+<img src="https://github.com/kylecesmat/react-cheers/blob/master/cheers.gif" width=550>
 
 # React Cheers
 
