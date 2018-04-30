@@ -38,6 +38,7 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-flowtype": "^2.46.3",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.4.0",
