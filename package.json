@@ -1,16 +1,12 @@
 {
   "name": "react-cheers",
   "version": "0.1.0",
-  "description": "A toast-management component for React without any dependencies, cheers!",
+  "description":
+    "A toast-management component for React without any dependencies, cheers!",
   "main": "index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
-  "keywords": [
-    "toast",
-    "notification",
-    "alert",
-    "react"
-  ],
+  "keywords": ["toast", "notification", "alert", "react"],
   "author": "Kyle Cesmat <kyle.cesmat@formidable.com>",
   "license": "MIT",
   "devDependencies": {
@@ -43,6 +39,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.71.0",
+    "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.2",
     "jest-environment-enzyme": "^6.0.0",
     "jest-enzyme": "^6.0.0",
@@ -50,6 +47,7 @@
     "react-dom": "^16.0.0",
     "react-hot-loader": "^1.3.0",
     "react-test-renderer": "^16.2.0",
+    "script-ext-html-webpack-plugin": "^2.0.1",
     "sinon": "^4.4.2",
     "style-loader": "^0.20.3",
     "url-loader": "^0.6.2",
@@ -65,8 +63,10 @@
     "preversion": "npm run check",
     "version": "npm run build",
     "start": "webpack-dev-server --mode development",
+    "build-demo": "webpack --config webpack.demo.build.js",
     "build-babel": "babel src",
-    "build-es": "builder run  --env \"{\\\"BABEL_ENV\\\":\\\"esm\\\"}\" build-babel -- -d es",
+    "build-es":
+      "builder run  --env \"{\\\"BABEL_ENV\\\":\\\"esm\\\"}\" build-babel -- -d es",
     "build-lib": "builder run build-babel -- -d lib",
     "build-dist": "webpack --config webpack.dist.config.js --mode production",
     "build": "builder concurrent --buffer build-lib build-es",
