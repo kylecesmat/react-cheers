@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Provider should match snapshot 1`] = `
-<[object Object]
-  value={
-    Object {
-      "dispatch": [Function],
-      "expire": [Function],
-      "notifications": Array [],
-    }
-  }
+exports[`Composer accept a className prop 1`] = `
+<div
+  className="notification-composer foo"
 >
-  Child
-</[object Object]>
+  <[object Object] />
+</div>
 `;

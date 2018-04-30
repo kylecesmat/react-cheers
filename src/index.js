@@ -88,16 +88,27 @@ export const withNotifications = (Component: React$Element<*>) => (
   </Context.Consumer>
 );
 
-export const Composer = () => (
-  <div className="notification-composer">
+type ComposerProps = {
+  className?: String,
+  notificationClassname?: String
+};
+
+export const Composer = ({
+  className,
+  notificationClassname
+}: ComposerProps) => (
+  <div className={['notification-composer', className || ''].join(' ')}>
     <Context.Consumer>
       {({ notifications, expire }) =>
         notifications.map(({ kind, message, id }) => (
           <div
+            data-auto="notification"
             key={id}
-            className={['notification', `notification--status-${kind}`].join(
-              ' '
-            )}
+            className={[
+              'notification',
+              `notification--status-${kind}`,
+              notificationClassname || ''
+            ].join(' ')}
           >
             <span>{message}</span>
             {expire && <button onClick={() => expire(id)}>Dismiss</button>}
