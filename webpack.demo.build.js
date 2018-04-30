@@ -18,6 +18,8 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
+      inject: true,
+      template: './demo/index.html',
       title: 'React Cheers - A lightweight toast manager'
     }),
     new ScriptExtHtmlWebpackPlugin({
