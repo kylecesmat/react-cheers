@@ -40,6 +40,7 @@ export class Provider extends React.Component<Props, State> {
     };
   }
 
+  // eslint-disable-next-line consistent-return
   dispatch = ({ id, message, kind, expires }: Notification) => {
     if (this.state.notifications.find((notif) => notif.id === id)) return null;
 
