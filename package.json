@@ -1,6 +1,6 @@
 {
   "name": "react-cheers",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A toast-management component for React without any dependencies, cheers!",
   "main": "index.js",
   "module": "es/index.js",
